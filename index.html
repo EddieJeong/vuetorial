@@ -10,9 +10,10 @@
 </head>
 <body>
   <div id='app'>
-    <h1>{{ decorate('fun') }}</h1>
-    <p>name : {{ name }}</p>
-    <p>hobby : {{ hobby }}</p>
+    <h1>Data binding</h1>
+    <p><a v-bind:href="naver">naver.com</a></p>
+    <p><input type='text' v-bind:value='hobby' /></p>
+    <p v-html='naverTag'></p>
   </div>
   <script src='app.js'></script>
 </body>
